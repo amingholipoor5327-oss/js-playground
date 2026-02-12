@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    min-height: 100vh;
+    padding: 40px;
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+ #cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* template مخفی */
+.template {
+    display: none;
+}
+
+.delete {
+    background: crimson;
+    color: white;
+    margin-top: 10px;
+}

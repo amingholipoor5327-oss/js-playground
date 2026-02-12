@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <title>Card Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="form">
+        <input id="name" placeholder="نام..." />
+        <input id="job" placeholder="توضیح..." />
+        <button onclick="addCard()">Add Card</button>
+    </div>
+
+    <!-- template (مخفی) -->
+    <div class="card template" id="cardTemplate">
+        <h3 class="card-name">Name</h3>
+        <p class="card-job">Description</p>
+        <button class="delete">Delete</button>
+    </div>
+
+    <div id="cards"></div>
+
+    <script src="./Clone.js"></script>
+</body>
+</html>
