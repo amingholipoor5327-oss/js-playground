@@ -1,0 +1,96 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Vazirmatn, sans-serif;
+}
+
+ body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    flex-direction: column;
+    gap: 25px;
+}
+
+ body > div {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+ select,
+input {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 14px;
+    transition: 0.3s;
+    min-width: 150px;
+}
+
+ select:focus,
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102,126,234,0.3);
+}
+
+ #result {
+    min-height: 40px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+button{
+
+    min-height: 40px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    transition: 0.9s;
+    cursor: pointer;
+
+ }
+ button:hover{
+    transform: translateY(-5px);
+    background:linear-gradient(135deg , rgb(77, 77, 255) ,rgb(0, 0, 151) );
+    color: white;
+  }
+
+/* وقتی چیزی ساخته شد  */
+ #result:not(:empty) {
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
