@@ -1,3 +1,17 @@
-let Result = document.querySelector("#result");
+const resultEl = document.querySelector("#result");
+const cartEl = document.querySelector(".menu");
+const bodyEl = document.body;
 
-Result.innerHTML= document.activeElement.tagName
+
+ resultEl.textContent = document.activeElement.tagName;
+
+
+ const add = () => {
+  cartEl.classList.add("menu-dark");
+  bodyEl.classList.add("light-bg");
+};
+
+const remove = ()=>{
+    cartEl.classList.remove("menu-dark")
+    bodyEl.classList.remove("light-bg")
+}

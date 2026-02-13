@@ -6,9 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background:linear-gradient(135deg , rgb(77, 77, 255) ,rgb(0, 0, 151) );
-    padding: 20px;
+ background:linear-gradient(135deg , rgb(81, 0, 151) , rgb(94, 94, 95));    padding: 20px;
     line-height: 1.6;
+}
+.menu-dark {
+  background: linear-gradient(135deg, rgb(98,98,98), rgb(94,94,95));
+  color: white;
+}
+
+.light-bg {
+  background: white;
 }
 
 .menu {
@@ -72,9 +79,26 @@ footer {
     color: #666;
     font-size: 0.9rem;
 }
+button{
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 16px;
+    position: relative;
+    color: #d15b06;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: bold;
+    background:linear-gradient(135deg , rgb(74, 0, 138) , rgb(49, 49, 49));
+}
+button:hover{
+    transform: translateY(-5px);
+    color: #ff6a00;
+}
 
-/* برای نمایش در موبایل */
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
     .menu {
         padding: 20px;
     }
