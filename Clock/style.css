@@ -1,0 +1,73 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Consolas", monospace;
+}
+
+ body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+ .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ .clock-card {
+  padding: 50px 70px;
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+
+  text-align: center;
+  color: white;
+}
+
+ .title {
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+ .time {
+  font-size: 75px;
+  font-weight: bold;
+  color: #00ffe7;
+
+  text-shadow: 0 0 15px #00ffe7;
+}
+
+ .separator {
+  animation: blink 1s infinite;
+}
+
+ .date {
+  margin-top: 20px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+ @keyframes blink {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+ @media (max-width: 600px) {
+  .time {
+    font-size: 45px;
+  }
+  .clock-card {
+    padding: 30px;
+  }
+}
